@@ -1,0 +1,130 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+/* root styling */
+
+:root {
+  --background-color-primary: hsl(217, 28%, 15%);
+  --background-color-main: hsl(218, 28%, 13%);
+  --background-color-footer: hsl(216, 53%, 9%);
+  --background-color-testimonial: hsl(219, 30%, 18%);
+  --font-color: hsl(0, 2%, 79%);
+  --background-color-button: hsl(198, 60%, 50%);
+  --font-body: "Open Sans", sans-serif;
+  --font-heading: "Raleway", sans-serif;
+  --font-size: 15px;
+}
+
+/* body styling */
+body {
+  background-color: var(--background-color-main);
+  font-family: var(--font-body);
+  padding: 0 3rem;
+  line-height: 1.8rem;
+}
+
+/* button styling */
+button {
+  padding: 0.8rem 4.5rem;
+  background-color: var(--background-color-button);
+  border: none;
+  border-radius: 50px;
+  color: var(--font-color);
+  font-family: var(--font-heading);
+  font-weight: 500;
+}
+
+/* header section styling */
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+  font-family: var(--font-heading);
+}
+
+.header__right li {
+  display: inline-block;
+  margin-right: 2rem;
+}
+.header__right li:last-child {
+  margin-right: 0;
+}
+.header__right li a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+/* main section */
+
+.main,
+.hero__img,
+.hero__des {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--font-color);
+  text-align: center;
+}
+.hero__img {
+  padding: 0;
+  width: 100%;
+}
+.hero__des {
+  /* background-image: url(./images/bg-curvy-desktop.svg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  gap: 1.5rem;
+}
+.hero__des h2 {
+  font-size: 2rem;
+  font-family: var(--font-heading);
+  text-align: center;
+  line-height: 2.5rem;
+}
+
+/* services section styling here */
+.services {
+  padding: 4rem 0;
+  width: 70%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+}
+
+.sevice__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: var(--font-color);
+}
+
+.sevice__card img {
+  width: 80x;
+  height: 80px;
+  margin-bottom: 1.5rem;
+}
+
+.sevice__card h3 {
+  margin-bottom: 0.5rem;
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+}
+
+.sevice__card p {
+  line-height: 1.3rem;
+  font-weight: 400;
+}
