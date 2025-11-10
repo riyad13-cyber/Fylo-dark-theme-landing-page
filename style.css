@@ -87,7 +87,9 @@ header {
   background-size: cover; */
   gap: 1.5rem;
 }
-.hero__des h2 {
+.hero__des h2,
+.stay__right h3,
+.early__acces h3 {
   font-size: 2rem;
   font-family: var(--font-heading);
   text-align: center;
@@ -127,4 +129,131 @@ header {
 .sevice__card p {
   line-height: 1.3rem;
   font-weight: 400;
+}
+
+/* stay productive section styling */
+
+.stay__productive,
+.testimonial {
+  margin: 4rem 0;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  color: var(--font-color);
+}
+
+.stay__right h3 {
+  text-align: left;
+  margin-bottom: 2rem;
+  padding-right: 12rem;
+}
+
+.stay__right p {
+  margin-bottom: 1rem;
+}
+
+.stay__link a {
+  color: var(--background-color-button);
+  text-decoration: none;
+}
+
+/* testimonial section styling start here */
+
+.testimonial {
+  position: relative;
+  margin: 10rem 0;
+}
+.quote {
+  position: absolute;
+  top: -2rem;
+  left: 1.5rem;
+}
+.quote img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.testimonial__card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  gap: 2rem;
+  background-color: var(--background-color-testimonial);
+  border-radius: 0.2rem;
+  color: var(--font-color);
+}
+
+.card__profile {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.card__profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--font-color);
+}
+
+.card__des h4 {
+  font-size: 1.2rem;
+  font-family: var(--font-heading);
+  margin-bottom: -0.5rem;
+}
+
+.card__des p {
+  font-size: 0.8rem;
+}
+
+/* early access styling from here */
+
+.early__acces {
+  background-color: var(--background-color-primary);
+  width: 60%;
+  margin: 0 auto;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+  color: var(--font-color);
+  border-radius: 8px;
+  box-shadow: 5px 5px 25px -3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 5px 5px 25px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 5px 25px -3px rgba(0, 0, 0, 0.75);
+}
+
+.access__email {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.access__email input[type="email"],
+.access__email input[type="button"] {
+  width: 70%;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 3rem;
+}
+.access__email input[type="email"]:focus {
+  outline: 2px solid var(--background-color-button);
+}
+
+.access__email input::placeholder {
+  color: var(--font-color);
+}
+
+.access__email input[type="button"] {
+  width: 30%;
+  background-color: var(--background-color-button);
+  color: var(--font-color);
+  font-weight: 500;
 }
