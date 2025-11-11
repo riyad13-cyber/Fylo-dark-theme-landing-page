@@ -16,6 +16,8 @@
   --background-color-testimonial: hsl(219, 30%, 18%);
   --font-color: hsl(0, 2%, 79%);
   --background-color-button: hsl(198, 60%, 50%);
+  --background-button-hover: hsl(176, 68%, 64%);
+  --font-hover: white;
   --font-body: "Open Sans", sans-serif;
   --font-heading: "Raleway", sans-serif;
   --font-size: 15px;
@@ -38,6 +40,7 @@ button {
   color: var(--font-color);
   font-family: var(--font-heading);
   font-weight: 500;
+  transition: all 0.3s ease;
 }
 
 /* header section styling */
@@ -61,6 +64,7 @@ header {
 .header__right li a {
   text-decoration: none;
   color: var(--font-color);
+  transition: all 0.3s ease;
 }
 
 /* main section */
@@ -118,6 +122,7 @@ header {
   width: 80x;
   height: 80px;
   margin-bottom: 1.5rem;
+  transition: 0.3s all ease;
 }
 
 .sevice__card h3 {
@@ -158,6 +163,9 @@ header {
 .stay__link a {
   color: var(--background-color-button);
   text-decoration: none;
+}
+.stay__link a i {
+  transition: all 0.3s ease;
 }
 
 /* testimonial section styling start here */
@@ -202,6 +210,7 @@ header {
   font-size: 1.2rem;
   font-family: var(--font-heading);
   margin-bottom: -0.5rem;
+  transition: all 0.3s ease;
 }
 
 .card__des p {
@@ -255,5 +264,93 @@ header {
   width: 30%;
   background-color: var(--background-color-button);
   color: var(--font-color);
-  font-weight: 500;
+  font-weight: 600;
+  transition: 0.3s all ease;
+}
+
+/* footer styling start here */
+footer {
+  margin-top: 4rem;
+  padding: 2rem 2.5rem;
+}
+
+footer img {
+  margin-bottom: 2rem;
+}
+
+.footer__cols {
+  display: grid;
+  grid-template-columns: 30% 30% 15% 15% 10%;
+  color: var(--font-color);
+}
+
+.col__body:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* align-items: center; */
+  gap: 1rem;
+}
+
+.col__body:nth-child(1) i {
+  font-size: 1rem;
+}
+
+.col__body:nth-child(2) {
+  margin-left: 2rem;
+}
+.col__body:nth-child(2) p:nth-child(1) {
+  padding-bottom: 1rem;
+}
+.col__body:nth-child(2) i {
+  margin-right: 0.5rem;
+}
+
+.col__body:nth-child(3) ul li a,
+.col__body:nth-child(4) ul li a {
+  color: var(--font-color);
+  text-decoration: none;
+  font-family: var(--font-body);
+}
+.col__body:nth-child(5) span {
+  margin-right: 0.5rem;
+}
+.col__body:nth-child(5) span:last-child {
+  margin-right: 0;
+}
+
+/* all hover effect styling */
+
+.header__right li a:hover {
+  color: var(--font-hover);
+}
+
+button:hover,
+.access__email input[type="button"]:hover {
+  background-color: var(--background-button-hover);
+  color: var(--background-color-button);
+  cursor: pointer;
+}
+
+.sevice__card img:hover {
+  transform: translateY(-0.7rem);
+  cursor: pointer;
+}
+
+.stay__link a:hover i {
+  transform: translateX(0.7rem);
+}
+
+.card__des h4:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.col__body:nth-child(2) p:last-child:hover,
+.col__body:nth-child(3) a:hover,
+.col__body:nth-child(4) a:hover {
+  text-decoration: underline;
+}
+.col__body:nth-child(2) p:last-child:hover,
+.col__body:nth-child(5) span:hover {
+  cursor: pointer;
 }
