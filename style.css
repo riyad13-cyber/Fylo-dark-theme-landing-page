@@ -85,10 +85,6 @@ header {
   width: 100%;
 }
 .hero__des {
-  /* background-image: url(./images/bg-curvy-desktop.svg);
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover; */
   gap: 1.5rem;
 }
 .hero__des h2,
